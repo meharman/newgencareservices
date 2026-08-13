@@ -11,7 +11,41 @@
         content="New Gen Care provides compassionate home care, personal support and companion care throughout the Lower Mainland of British Columbia.">
 
     <style>
+/* TOP BAR */
 
+.top-bar {
+
+    background: #0b5d57;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 7%;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+.top-bar a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.top-bar a:hover {
+
+    text-decoration: underline;
+
+}
         * {
             margin: 0;
             padding: 0;
@@ -28,23 +62,57 @@
             line-height: 1.6;
             background: #ffffff;
         }
+.header-button {
 
+    background: #0b8f83;
+
+    color: white !important;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    margin-left: 20px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.header-button:hover {
+
+    background: #087268;
+
+}
         /* HEADER */
 
-        header {
-            background: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
+header {
+           
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 7%;
+
+    box-shadow: 0 2px 20px rgba(0,0,0,.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+}
 
    .logo img {
-    width: 130px;
+    width: 220px;
     height: auto;
     display: block;
 }
@@ -390,7 +458,15 @@
         }
 
         /* MOBILE */
+.top-bar {
 
+    flex-direction: column;
+
+    gap: 8px;
+
+    text-align: center;
+
+}
         @media (max-width: 900px) {
 .hero {
     flex-direction: column;
@@ -457,9 +533,39 @@
 
 <body>
 
+<div class="top-bar">
 
+    <div class="top-left">
+        📞 <a href="tel:6047652273">604-765-2273</a>
+    </div>
+
+    <div class="top-center">
+        ✉️ <a href="mailto:contact@newgencareservices.com">
+        contact@newgencareservices.com
+        </a>
+    </div>
+
+    <div class="top-right">
+        📍 Proudly Serving the Lower Mainland, BC
+    </div>
+
+</div>
 <!-- HEADER -->
+<nav>
 
+    <a href="#about">About</a>
+
+    <a href="#services">Services</a>
+
+    <a href="#who-we-help">Who We Help</a>
+
+    <a href="#contact">Contact</a>
+
+    <a href="#contact" class="header-button">
+        Request Assessment
+    </a>
+
+</nav>
 <header>
 
    <div class="logo">
