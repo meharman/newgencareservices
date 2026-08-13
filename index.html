@@ -726,53 +726,71 @@
             Tell us a little about your care needs and our team will contact you.
         </p>
 
-        <form action="mailto:contact@newgencareservices.com" method="post" enctype="text/plain" class="assessment-form">
+        <f<form
+  action="https://formspree.io/f/mrpzkrjd"
+  method="POST"
+  class="assessment-form"
+>
 
-            <input type="text" name="Name" placeholder="Full Name" required>
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+  >
 
-            <input type="tel" name="Phone" placeholder="Phone Number" required>
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Phone Number"
+    required
+  >
 
-            <input type="email" name="Email" placeholder="Email Address" required>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+  >
 
-            <input type="text" name="Care For" placeholder="Who needs care?" required>
+  <input
+    type="text"
+    name="care_for"
+    placeholder="Who needs care?"
+    required
+  >
 
-            <select name="Service Needed" required>
-                <option value="">Select a service</option>
-                <option>Personal Care</option>
-                <option>Companionship</option>
-                <option>Medication Reminders</option>
-                <option>Mobility Assistance</option>
-                <option>Dementia Support</option>
-                <option>Respite Care</option>
-                <option>Post-Surgery Recovery</option>
-                <option>Disability Support</option>
-                <option>Veteran Support</option>
-                <option>Nursing &amp; Healthcare Services</option>
-            </select>
+  <select name="service_needed" required>
+    <option value="">Select a service</option>
+    <option>Personal Care</option>
+    <option>Companionship</option>
+    <option>Medication Reminders</option>
+    <option>Mobility Assistance</option>
+    <option>Dementia Support</option>
+    <option>Respite Care</option>
+    <option>Post-Surgery Recovery</option>
+    <option>Disability Support</option>
+    <option>Veteran Support</option>
+    <option>Nursing & Healthcare Services</option>
+  </select>
 
-            <select name="Preferred Contact" required>
-                <option value="">Preferred contact method</option>
-                <option>Phone</option>
-                <option>Email</option>
-            </select>
+  <select name="preferred_contact" required>
+    <option value="">Preferred contact method</option>
+    <option>Phone</option>
+    <option>Email</option>
+  </select>
 
-            <textarea name="Message" rows="5" placeholder="Please tell us about your care needs"></textarea>
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Please tell us briefly about your care needs"
+  ></textarea>
 
-            <button type="submit" class="button">
-                Submit Request
-            </button>
+  <button type="submit" class="button">
+    Request My Care Assessment
+  </button>
 
-        </form>
-
-        <div class="contact-info">
-            <p><strong>Phone:</strong> 604-765-2273</p>
-            <p><strong>Email:</strong> contact@newgencareservices.com</p>
-            <p><strong>Service Area:</strong> Lower Mainland, British Columbia</p>
-        </div>
-
-    </div>
-
-</section>
+</form>
 
 
 <!-- FOOTER -->
