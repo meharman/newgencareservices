@@ -60,7 +60,28 @@
         }
 
         /* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
 
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
         .hero {
             background: linear-gradient(
                 135deg,
@@ -371,7 +392,14 @@
         /* MOBILE */
 
         @media (max-width: 900px) {
+.hero {
+    flex-direction: column;
+    text-align: center;
+}
 
+.hero-image {
+    margin-top: 30px;
+}
             .service-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -465,25 +493,23 @@
     <div class="hero-content">
 
         <h1>
-            Compassionate Care.
-            <br>
+            Compassionate Care.<br>
             <span>Comfort at Home.</span>
         </h1>
 
         <p>
-            New Gen Care provides compassionate home care,
-            personal support and companion care for individuals
-            and families throughout the Lower Mainland of British Columbia.
+            Providing compassionate home care, personal support, companion care,
+            and healthcare services throughout the Lower Mainland of British Columbia.
         </p>
 
         <a href="#contact" class="button">
-    Request a Care Assessment
-</a>
-
-        <a href="#services" class="button button-outline">
-            Explore Our Services
+            Request a Care Assessment
         </a>
 
+    </div>
+
+    <div class="hero-image">
+        <img src="hero.jpg" alt="Caregiver assisting a senior at home">
     </div>
 
 </section>
