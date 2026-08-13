@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Gen Care | Compassionate Home Care in BC</title>
+
+    <meta name="description"
+        content="New Gen Care provides compassionate home care, personal support and companion care throughout the Lower Mainland of British Columbia.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #26383b;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+
+        /* HEADER */
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+   .logo img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+        nav a {
+            text-decoration: none;
+            color: #26383b;
+            margin-left: 28px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #167c73;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #e9f7f5,
+                #f8fcfb
+            );
+
+            min-height: 650px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 80px 7%;
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.12;
+            color: #173f42;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #167c73;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #56686b;
+            margin-bottom: 32px;
+            max-width: 720px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #167c73;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background: #105f59;
+        }
+
+        .button-outline {
+            background: white;
+            color: #167c73;
+            border: 2px solid #167c73;
+        }
+
+        .button-outline:hover {
+            background: #167c73;
+            color: white;
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 80px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #173f42;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #657477;
+            font-size: 18px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #526366;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: #f3faf8;
+        }
+
+        .service-grid {
+            max-width: 1150px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+
+            box-shadow:
+                0 6px 25px rgba(0,0,0,0.06);
+
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #167c73;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #5b6b6e;
+        }
+
+        /* WHO WE HELP */
+
+        .who-we-help {
+            background: white;
+        }
+
+        .people-grid {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            gap: 15px;
+        }
+
+        .person {
+            text-align: center;
+            background: #eaf7f4;
+            padding: 25px 15px;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+            color: #28595b;
+        }
+
+        /* WHY */
+
+        .why {
+            background: #173f42;
+            color: white;
+            text-align: center;
+        }
+
+        .why h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .why p {
+            max-width: 850px;
+            margin: auto;
+            color: #dcebea;
+            font-size: 18px;
+        }
+
+        /* SERVICE AREA */
+
+        .area {
+            background: #f3faf8;
+            text-align: center;
+        }
+
+        .area-box {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .area-box h2 {
+            color: #173f42;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .area-box p {
+            color: #59696c;
+            font-size: 18px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-box {
+            max-width: 850px;
+            margin: auto;
+
+            text-align: center;
+
+            padding: 50px 30px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 30px rgba(0,0,0,0.08);
+        }
+
+        .contact-box h2 {
+            color: #173f42;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: #637275;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+/* ASSESSMENT FORM */
+
+.assessment-form {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    display: grid;
+    gap: 15px;
+}
+
+.assessment-form input,
+.assessment-form select,
+.assessment-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d0d7d8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.assessment-form input:focus,
+.assessment-form select:focus,
+.assessment-form textarea:focus {
+    outline: none;
+    border-color: #167c73;
+    box-shadow: 0 0 0 3px rgba(22,124,115,0.12);
+}
+
+.assessment-form button {
+    width: fit-content;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 25px;
+    color: #506165;
+}
+
+.contact-info p {
+    margin: 6px 0;
+}
+        /* FOOTER */
+
+        footer {
+            background: #102f32;
+            color: white;
+            text-align: center;
+            padding: 35px 7%;
+        }
+
+        footer strong {
+            font-size: 21px;
+        }
+
+        footer p {
+            margin-top: 8px;
+            color: #d1dfdf;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .people-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 70px 6%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            .service-grid,
+            .people-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button {
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+   <div class="logo">
+    <img src="logo.png" alt="New Gen Care Logo">
+</div>
+
+    <nav>
+
+    <a href="#about">About</a>
+
+    <a href="#services">Services</a>
+
+    <a href="#who-we-help">Who We Help</a>
+
+    <a href="#contact">Contact</a>
+
+    <a href="tel:6047652273" class="header-phone">
+        📞 604-765-2273
+    </a>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Compassionate Care.
+            <br>
+            <span>Comfort at Home.</span>
+        </h1>
+
+        <p>
+            New Gen Care provides compassionate home care,
+            personal support and companion care for individuals
+            and families throughout the Lower Mainland of British Columbia.
+        </p>
+
+        <a href="#contact" class="button">
+    Request a Care Assessment
+</a>
+
+        <a href="#services" class="button button-outline">
+            Explore Our Services
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <h2>
+            About New Gen Care
+        </h2>
+
+        <p>
+            Supporting independence, dignity and quality of life.
+        </p>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p>
+            NewGen Care Group Inc. provides a comprehensive range
+            of home care services designed to support individuals
+            in the comfort and familiarity of their own homes.
+        </p>
+
+        <br>
+
+        <p>
+            Our services include non-medical personal support and
+            companion care, as well as selected medical services
+            delivered by qualified healthcare professionals where
+            permitted by applicable provincial regulations.
+        </p>
+
+        <br>
+
+        <p>
+            We believe that quality care begins with understanding
+            each person's unique needs. Our goal is to provide
+            respectful, dependable and person-centred support that
+            promotes independence, dignity and peace of mind.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Comprehensive home care and support services tailored to each client's needs.</p>
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="service-icon">🤝</div>
+      <h3>Personal Care</h3>
+      <p>Assistance with daily personal care while preserving dignity and independence.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">❤️</div>
+      <h3>Companionship</h3>
+      <p>Friendly companionship and social engagement to support emotional well-being.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💊</div>
+      <h3>Medication Reminders</h3>
+      <p>Timely reminders to help clients follow prescribed medication routines.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🚶</div>
+      <h3>Mobility Assistance</h3>
+      <p>Support with walking, transfers, and safe movement around the home.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🧠</div>
+      <h3>Dementia Support</h3>
+      <p>Compassionate care and supervision for individuals living with dementia or memory loss.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌿</div>
+      <h3>Respite Care</h3>
+      <p>Temporary care that gives family caregivers time to rest and recharge.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏥</div>
+      <h3>Post-Surgery Recovery</h3>
+      <p>Short-term support during recovery after surgery, illness, or hospitalization.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">♿</div>
+      <h3>Disability Support</h3>
+      <p>Personalized assistance that promotes independence and participation in daily life.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎖️</div>
+      <h3>Veteran Support</h3>
+      <p>Respectful home care services designed to support veterans and their families.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🩺</div>
+      <h3>Nursing &amp; Healthcare Services</h3>
+      <p>Selected healthcare services delivered by qualified professionals where permitted by applicable regulations.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHO WE HELP -->
+
+<section class="who-we-help" id="who-we-help">
+
+    <div class="section-title">
+
+        <h2>
+            Who We Support
+        </h2>
+
+        <p>
+            Care and support for individuals and families
+            with different needs and circumstances.
+        </p>
+
+    </div>
+
+
+    <div class="people-grid">
+
+
+        <div class="person">
+            Seniors
+        </div>
+
+
+        <div class="person">
+            Adults with Disabilities
+        </div>
+
+
+        <div class="person">
+            Veterans
+        </div>
+
+
+        <div class="person">
+            Individuals Recovering from Illness or Surgery
+        </div>
+
+
+        <div class="person">
+            Short & Long-Term Support
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- WHY NEW GEN CARE -->
+
+<section class="why">
+
+    <h2>
+        Care With Dignity & Compassion
+    </h2>
+
+    <p>
+        At New Gen Care, we understand that choosing care for
+        yourself or a loved one is an important decision.
+        We are committed to treating every person with respect,
+        compassion and dignity while providing dependable
+        support in the comfort of home.
+    </p>
+
+</section>
+
+
+
+<!-- SERVICE AREA -->
+
+<section class="area">
+
+    <div class="area-box">
+
+        <h2>
+            Serving the Lower Mainland
+        </h2>
+
+        <p>
+            New Gen Care proudly serves individuals and families
+            throughout the Lower Mainland of British Columbia.
+        </p>
+
+        <br>
+
+        <p>
+            Contact us to discuss your location and care needs.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<<section class="contact" id="contact">
+
+    <div class="contact-box">
+
+        <h2>Request a Care Assessment</h2>
+
+        <p>
+            Tell us a little about your care needs and our team will contact you.
+        </p>
+
+        <form action="mailto:contact@newgencareservices.com" method="post" enctype="text/plain" class="assessment-form">
+
+            <input type="text" name="Name" placeholder="Full Name" required>
+
+            <input type="tel" name="Phone" placeholder="Phone Number" required>
+
+            <input type="email" name="Email" placeholder="Email Address" required>
+
+            <input type="text" name="Care For" placeholder="Who needs care?" required>
+
+            <select name="Service Needed" required>
+                <option value="">Select a service</option>
+                <option>Personal Care</option>
+                <option>Companionship</option>
+                <option>Medication Reminders</option>
+                <option>Mobility Assistance</option>
+                <option>Dementia Support</option>
+                <option>Respite Care</option>
+                <option>Post-Surgery Recovery</option>
+                <option>Disability Support</option>
+                <option>Veteran Support</option>
+                <option>Nursing &amp; Healthcare Services</option>
+            </select>
+
+            <select name="Preferred Contact" required>
+                <option value="">Preferred contact method</option>
+                <option>Phone</option>
+                <option>Email</option>
+            </select>
+
+            <textarea name="Message" rows="5" placeholder="Please tell us about your care needs"></textarea>
+
+            <button type="submit" class="button">
+                Submit Request
+            </button>
+
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Phone:</strong> 604-765-2273</p>
+            <p><strong>Email:</strong> contact@newgencareservices.com</p>
+            <p><strong>Service Area:</strong> Lower Mainland, British Columbia</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>
+        New Gen Care
+    </strong>
+
+    <p>
+        Serving the Lower Mainland of British Columbia
+    </p>
+
+    <p>
+        © 2026 New Gen Care. All rights reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
