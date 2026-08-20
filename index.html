@@ -55,21 +55,17 @@
 
     /* HEADER */
 
-    header {
-      background: white;
-      min-height: 95px;
-      padding: 12px 7%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 18px rgba(0,0,0,0.07);
-    }
+   header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.08);
+}
 
     .logo img {
-      width: 350px;
+      width: 360px;
       max-height: 80px;
       object-fit: contain;
     }
@@ -81,25 +77,29 @@
     }
 
     nav a {
-      color: #293d40;
-      font-size: 15px;
-      font-weight: 700;
-    }
+    color: #243638;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
 
     nav a:hover {
       color: #178176;
     }
 
-    .nav-button {
-      background: #167c73;
-      color: white !important;
-      padding: 12px 20px;
-      border-radius: 6px;
-    }
+   .nav-button {
+    background: #167c73;
+    color: white !important;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: .25s;
+}
 
-    .nav-button:hover {
-      background: #0d635c;
-    }
+.nav-button:hover {
+    background: #0f645d;
+    transform: translateY(-2px);
+}
 
     /* HERO */
 
